@@ -8,8 +8,8 @@ function App() {
   return (
     <>
     <NavBar />
-    <div>
-    <ItemListContainer greeting={"Bienvenidos a Tech-House. Casa de Electronica"}/>
+    <div className="text-center p-5 fs-2">
+    <ItemListContainer greeting={"Bienvenido a Tech-House. Casa de Electronica"}/>
     </div>
     </>
   )
