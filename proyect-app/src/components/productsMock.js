@@ -1,5 +1,5 @@
 const products = [
-    { id: "1", name:"ASUS NVIDIA GEFORCE GTX 1650 OC PHOENIX 4GB DDR5", category:"grafica",description:`-Motor gráfico:  NVIDIA® GeForce GTX 1650
+    { id: "1", name:"ASUS NVIDIA GEFORCE GTX 1650 OC PHOENIX 4GB DDR5", img:"../../public/img/nvidea-geforce-gtx-1650.png",category:"grafica",description:`-Motor gráfico:  NVIDIA® GeForce GTX 1650
     -Bus: PCI Express 3.0
     -OpenGL®4.6: Sí
     -Memoria de video: DDR5 de 4 GB
@@ -18,7 +18,7 @@ const products = [
     -Dimensiones: 19 x 11 x3.8 Cm
     -PSU recomendada: 300W
     -Espacio: 2 ranuras`, price:"218999", stock:"4"},
-    { id:"2", name:"ASUS ROG STRIX NVIDIA GEFORCE RTX 4070TI 12GB GAMING GDDR6X", category:"grafica", description:`-Motor Gráfico: NVIDIA® GeForce RTXTM 4070 Ti
+    { id:"2", name:"ASUS ROG STRIX NVIDIA GEFORCE RTX 4070TI 12GB GAMING GDDR6X", img:"../../public/img/nvidea-geforce-rtx-4070ti.png",category:"grafica", description:`-Motor Gráfico: NVIDIA® GeForce RTXTM 4070 Ti
     -Bús: PCI Express 4.0
     -OpenGL: OpenGL® 4.6
     -Memoria de Video: 12GB GDDR6X
@@ -37,7 +37,7 @@ const products = [
     -PSU Recomendada: 750W
     -Conectores de Energía: 1x16 pines
     -SINCRONIZACIÓN DEL AURA: ARGB`, price:"1399999", stock:"1" },
-    { id:"3", name:"ASUS NVIDIA GEFORCE GTX 1660 SUPER TUF GAMING OC 6GB DUAL", category:"grafica", description:`-Motor gráfico: NVIDIA® GeForce® GTX 1660 SUPER™
+    { id:"3", name:"ASUS NVIDIA GEFORCE GTX 1660 SUPER TUF GAMING OC 6GB DUAL", img:"../../public/img/nvidea-geforce-gtx-1660super.png",category:"grafica", description:`-Motor gráfico: NVIDIA® GeForce® GTX 1660 SUPER™
     -Bús: PCI Express 3.0
     -OpenGL: OpenGL®4.6
     -Memoria de video: 6GB GDDR6
@@ -57,7 +57,7 @@ const products = [
     -Dimensiones: 20.6 x 12.4 x4.6 Centímetro
     -Fuente de alimentación recomendada: 450W
     -Conectores de alimentación: 1x8 pines`, price:"339999", stock:"7"},
-    { id:"4", name:"GIGABYTE NVIDIA GEFORCE RTX 4080 EAGLE 16GB GDDR6X", category:"grafica",description:`-Procesamiento de gráficos: GeForce RTX™ 4080
+    { id:"4", name:"GIGABYTE NVIDIA GEFORCE RTX 4080 EAGLE 16GB GDDR6X", img:"../../public/img/nvidea-geforce-rtx-4080.png",category:"grafica",description:`-Procesamiento de gráficos: GeForce RTX™ 4080
     -Reloj de núcleo: 2505 MHz
     -CUDA® Cores: 9728
     -Tipo de memoria: GDDR6X
@@ -71,7 +71,7 @@ const products = [
     -Output: 
     DisplayPort 1.4a *3
     HDMI 2.1 *1`, price:"1899999", stock:"1"},
-    { id:"5", name:"POWERCOLOR RX550 LOW PROFILE 4GB GDDR5", category:"grafica",description:`Motor gráfico: AXRX 550 4GBD5-HLE
+    { id:"5", name:"POWERCOLOR RX550 LOW PROFILE 4GB GDDR5", img:"../../public/img/powercolor-rx550.png",category:"grafica",description:`Motor gráfico: AXRX 550 4GBD5-HLE
     Memoria de vídeo: GDDR5 DE 4 GB
     Procesador de flujo: 512 Unidades
     Reloj del motor (OC): hasta 1071 MHz con boost
@@ -87,7 +87,7 @@ const products = [
     Especificaciones de potencia + Dimensiones de la placa
     Dimensiones de la placa: 181*120*20m m
     Requisito mínimo de potencia del sistema (W): 2406`, price:"189999", stock:"8" },
-    { id:"6", name:"MONITOR 19 PHILIPS 193V5LHSB2/55 HDMI HD 60HZ", category:"monitores", description:`LCD TFT
+    { id:"6", name:"MONITOR 19 PHILIPS 193V5LHSB2/55 HDMI HD 60HZ", img:"../../public/img/monitor-philips-19.jpg",category:"monitores", description:`LCD TFT
     Tipo de retroiluminación Sistema W-LED
     Tamaño de panel 18,5 pulg / 47 cm
     Área de visualización efectiva 409,8 (H) x 230,4 (V)
@@ -103,7 +103,7 @@ const products = [
     Señal de entrada VGA (analógica)
     HDMI (digital, HDCP)
     Entrada de sincronización Sincronización separada`, price:"69990", stock:"3" },
-    { id:"7", name:"MONITOR 20 LED LG 20MK400H-B HDMI HD", category:"monitores", description:`-Tamaño (Pulgada) 19.5" / 49.4cm 
+    { id:"7", name:"MONITOR 20 LED LG 20MK400H-B HDMI HD", img:"../../public/img/monitor-lg-20.jpg",category:"monitores", description:`-Tamaño (Pulgada) 19.5" / 49.4cm 
     -Tipo panel TN 
     -Gama de Color (CIE 1931) 72%
     -Profundidad de Color (Nº colores) 16.7M colors
@@ -113,7 +113,7 @@ const products = [
     -Brillo 200cd/m2 (Típ.) 160cd/m2 (Min.)
     -Tiempo de Respuesta (GTG) 5ms
     -Ángulo de Visión (CR≥10) 90/65 (CR≥10)`, price:"71999", stock:"4"},
-    { id:"8", name:"MONITOR 27 NOBLEX 91MK27X7100 VA FHD 75HZ", category:"monitores", description:`-Pantalla: 450x613x255mm
+    { id:"8", name:"MONITOR 27 NOBLEX 91MK27X7100 VA FHD 75HZ", img:"../../public/img/monitor-noblex-27.jpg",category:"monitores", description:`-Pantalla: 450x613x255mm
     -Resolución: 1920x1080
     -Brillo: 250cd/m2
     -Conexión WiFi: Si
@@ -125,12 +125,12 @@ const products = [
     -Contraste: 4000
     -TDA: No
     -Panel: VA`, price:"109999", stock:"2"},
-    { id:"9", name:"MOUSE GENIUS DX 120 USB 1000 DPI", category:"mouse", description:`Interfaz USB
+    { id:"9", name:"MOUSE GENIUS DX 120 USB 1000 DPI", img:"../../public/img/mouse-genius-dx120.jpg",category:"mouse", description:`Interfaz USB
     Unidad de sensor Óptico
     Resolución (DPI) 1000
     Cantidad de botones Tres (izquierda, derecha y central con desplazamiento)
     Longitud de cable de alimentación 1.5m`, price:"7999", stock:"10"},
-    { id:"10", name:"MOUSE INALAMBRICO REDRAGON M690 MIRACLE", category:"mouse", description:`-Tipo: inalámbrico de 2,4 Ghz
+    { id:"10", name:"MOUSE INALAMBRICO REDRAGON M690 MIRACLE", img:"../../public/img/mouse-redragon-m690.png",category:"mouse", description:`-Tipo: inalámbrico de 2,4 Ghz
     -Voltaje: 1,5 V
     -Corriente: 15 mA
     -USB: USB 2.0 y 3.0
@@ -142,14 +142,14 @@ const products = [
     -Compatible: Windows XP/Vista/Win7/Win8/Win10/2000, etc.
     -Tamaño: 4,94*1,61*2,9 pulgadas
     -Peso: 120g (sin batería)`, price:"16999", stock:"4"},
-    { id:"11", name:"MOUSE LOGITECH G300S GAMING OPTICAL", category:"mouse", description:`ESPECIFICACIONES FÍSICAS
+    { id:"11", name:"MOUSE LOGITECH G300S GAMING OPTICAL", img:"../../public/img/mouse-logitech-g300s.jpg",category:"mouse", description:`ESPECIFICACIONES FÍSICAS
     Altura: 115 mm
     Anchura: 72 mm
     Profundidad: 37 mm
     Peso: 82 g, sólo mouse
     Longitud de cable: 2,10 m
     SEGUIMIENTO
-    Resolución: 200 – 2.500 dpi
+    Resolución: 200 - 2.500 dpi
     Sin suavizado/aceleración/filtros
     Aceleración máx.: >20 G2Pruebas realizadas sobre alfombrilla de mouse Logitech G240 para juegos
     Velocidad máx.: >150 ips3Pruebas realizadas sobre alfombrilla de mouse Logitech G240 para juegos
@@ -170,7 +170,7 @@ const products = [
     Chrome OS™
     Conexión a Internet para Logitech G HUB (opcional)
     Puerto USB`, price:"18990", stock:"4"},
-    { id:"12", name:"MOUSE REDRAGON M808 STORM PRO", category:"mouse", description:`Botones Programables: 8
+    { id:"12", name:"MOUSE REDRAGON M808 STORM PRO", img:"../../public/img/mouse-redragon-m808.jpg",category:"mouse", description:`Botones Programables: 8
     TIpo de agarre: Palm, Claw, Fingertip
     Orientación: Derecho
     Cable: Con cable mallado de 1.8 m
@@ -186,12 +186,12 @@ const products = [
     Sistema de Pesas:No
     Software: Si
     Contenido de la caja: Manual de uso, Sticker Redragon, Receptor inalámbrico, cable USB-C a USB-A.`, price:"24990", stock:"3"},
-    { id:"13", name:"MOUSE LOGITECH G G502X WHITE", category:"mouse", description:`-Dimensiones:
+    { id:"13", name:"MOUSE LOGITECH G G502X WHITE", img:"../../public/img/mouse-logitech-g502x.png",category:"mouse", description:`-Dimensiones:
     Altura: 131,4 mm
     Ancho: 41,1 mm
     Profundidad: 79,2 mm
     -Sensor: HERO 25K
-    -Resolución: 100 – 25.600 dpi
+    -Resolución: 100 - 25.600 dpi
     -Aceleración máx.: >40G2
     -Velocidad máx.: >400 IPS2 
     -Requisitos: Puerto USB, Acceso a Internet para descarga de software opcional
@@ -200,11 +200,11 @@ const products = [
     Hasta 5 perfiles de memoria integrada
     Pies de PTFE
     13 controles programables`, price:"70990", stock:"1"},
-    { id:"14", name:"TECLADO HDC KB113 USB", category:"teclado", description:`TECLAS: 113
+    { id:"14", name:"TECLADO HDC KB113 USB", img:"../../public/img/teclado-hdc.jpg",category:"teclado", description:`TECLAS: 113
     DISEÑO: español
     TECLAS MULTIMEDIA: 9
     VIDA DE TECLAS: 10 millones de veces`, price:"7890", stock:"12"},
-    { id:"15", name:"TECLADO PHILIPS G401 MIXED LED MECANICO", category:"teclado", description:`* Teclado mecanico Philips G401
+    { id:"15", name:"TECLADO PHILIPS G401 MIXED LED MECANICO", img:"../../public/img/teclado-philips-g401.png",category:"teclado", description:`* Teclado mecanico Philips G401
     * Ergonomico con 104 Teclas
     * Teclado retroiluminado Rgb (gran variedad de ondas de color y combinaciones)
     * Anti-ghosting de tecla completa para entradas rápidas y complejas
@@ -219,7 +219,7 @@ const products = [
     * Conector usb
     * Dimensiones (Largo x Profundo x Alto)
     43,8 x 13,2 x 3,85 cms`, price:"17990", stock:"5"},
-    { id:"16", name:"TECLADO REDRAGON MITRA K551 RGB MECANICO ESP", category:"teclado", description:`Iluminación RGB
+    { id:"16", name:"TECLADO REDRAGON MITRA K551 RGB MECANICO ESP", img:"../../public/img/telcado-redragon-k551.png",category:"teclado", description:`Iluminación RGB
     Porque no todo es tecnicismo, también nos importa la estética: el Mitra K552 posee retroiluminación real LED RGB con 16.8 millones de nítidos colores para transformar el teclado en TU teclado.
     - Tipo de interruptores: Mecánicos
     - Tipo Switch: Redragon Red, Lineal sin click audible , fuerza de actuación 45 gr 
@@ -238,7 +238,7 @@ const products = [
     - Dimensiones: 43.5x12.3x3.7 cm
     - Extras: Teclas moldeadas por inyección láser de doble disparo, keypicker, switches intercambiables (Solo MITRA)
     - Software: Si (Versión en español únicamente).`, price:"34990", stock:"4"},
-    { id:"17", name:"TECLADO LOGITECH G G213 RETROILUMINADO MULTIMEDIA", category:"teclado", description:`FUNCIONES
+    { id:"17", name:"TECLADO LOGITECH G G213 RETROILUMINADO MULTIMEDIA", img:"../../public/img/teclado-logitech-g213.png",category:"teclado", description:`FUNCIONES
     USO SIMULTÁNEO DE TECLAS PARA MAYOR RENDIMIENTO
     Cuatro veces más rápido que los teclados estándar
     Cada tecla de G213 está optimizada para mejorar la experiencia táctil y ofrecer una respuesta superrápida, hasta 4 veces superior a la de los teclados estándar. La matriz de prevención de efecto fantasma para juegos está programada para dominar el control al pulsar simultáneamente varias teclas de juego.
@@ -276,7 +276,7 @@ const products = [
     Anchura: 452 mm
     Profundidad: 33 mm
     Peso: 1000 g`, price:"94990", stock:"2"},
-    { id:"18", name:"AURICULAR REDRAGON H120 ARES C/MICROFONO S/ADAPTADOR", category:"auriculares", description:` Tipo de salida: Stereo
+    { id:"18", name:"AURICULAR REDRAGON H120 ARES C/MICROFONO S/ADAPTADOR", img:"../../public/img/auris-redragon-h120.jpg",category:"auriculares", description:` Tipo de salida: Stereo
     Tipo de copa: Circumaurales: Este tipo de auriculares se coloca rodeando completamente la oreja.
     Material Diadema: Plástica, recubierta de tela suave y duradera.
     Vibración: No
@@ -292,7 +292,7 @@ const products = [
     Impedancia: 2.2k Ohm
     Sensibilidad: -45 dB+/-5 dB
     Tipo de microfono y captación: De brazo tipo boom, rebatible. Captación direccional y reducción de ruido.`, price:"12990", stock:"6"},
-    {id:"19", name:"AURICULAR REDRAGON LAMIA 2 RGB 7.1", category:"auriculares", description:`Sonido envolvente virtual de 7.1 canales
+    {id:"19", name:"AURICULAR REDRAGON LAMIA 2 RGB 7.1", img:"../../public/img/auris-redragon-lamia2.png",category:"auriculares", description:`Sonido envolvente virtual de 7.1 canales
     Ayuda a localizar rápidamente la posición del enemigo cerca de ti en el campo de batalla.
     Amplio rango de compatibilidad
     Funciona con PC, PS3, PS4.
@@ -319,7 +319,7 @@ const products = [
     -Impedancia: 2.2k Ohm
     -Sensibilidad: -40 dB+/-3 dB
     -Tipo de micrófono y captación: Omnidireccional, Flexible, Integrado a la copa`, price:"32990", stock:"2"},
-    { id:"20", name:"AURICULAR LOGITECH G G335 BLACK", category:"auriculares", description:`-Dimensiones
+    { id:"20", name:"AURICULAR LOGITECH G G335 BLACK", img:"../../public/img/auris-logitech-g335.jpg",category:"auriculares", description:`-Dimensiones
     Longitud: 189 mm
     Anchura: 180 mm
     Profundidad: 79 mm
@@ -337,7 +337,7 @@ const products = [
     Audífonos G335 con micrófono y cable para juegos
     Divisor para PC para micrófonos y tomas de audífonos (divisor en Y)
     Documentación del usuario`, price:"70990", stock:"2"},
-    { id:"21", name:"MICROFONO REDRAGON BLAZAR GM300", category:"microfonos", description:`Material: Metal
+    { id:"21", name:"MICROFONO REDRAGON BLAZAR GM300", img:"../../public/img/microfono-redragon-gm300.png",category:"microfonos", description:`Material: Metal
     Unidad de micrófono: Condensador cardioide de 16 mm
     Dirección: Unidireccional
     Sensibilidad: -45 ± 3dB
@@ -347,7 +347,7 @@ const products = [
     Longitud del cable: 1.7 m
     Indicador Led: Anillo color rojo/Indica mute
     Botones de control: Integrado/controla volumen y mute`, price:"45990", stock:"3"},
-    { id:"22", name:"MICROFONO HYPERX QUADCAST S PC PS4", category:"microfonos", description:`-Consumo de energía: 5 V 220 mA (luz blanca)
+    { id:"22", name:"MICROFONO HYPERX QUADCAST S PC PS4", img:"../../public/img/microfono-hyperx-quadcast.jpg",category:"microfonos", description:`-Consumo de energía: 5 V 220 mA (luz blanca)
     -Frecuencia de muestreo/velocidad de bits: 48 kHz/16 bits
     -Tipo de condensador: Tres condensadores de 14 mm
     -Patrones polares: Estéreo, Omnidireccional, Cardioide, Bidireccional

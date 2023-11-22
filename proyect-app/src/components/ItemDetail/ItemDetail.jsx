@@ -11,10 +11,14 @@ export const ItemDetail = ({ description, img, price, stock, name}) => {
       <div className="card ">
         <div className="card-body ">
           <h5 className="card-title">{name}</h5>
-          <img src={img} alt="" />
-          <p className="card-text"> {description} </p>
-          <h3>Precio: ${price} </h3>
-          <ItemCount stock={stock} onAdd={onAdd} />
+          <div className="d-flex">
+            <img src={img} alt="" height={"800px"} />
+            <div>
+            <p className="card-text"> {description} </p>
+            <h3>Precio: ${price} </h3>
+            <ItemCount stock={stock} onAdd={onAdd} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
