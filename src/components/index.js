@@ -9,4 +9,5 @@ export * from './ItemList/ItemList';
 export * from './ItemListContainer/ItemListContainer';
 export * from './NavBar/CartWidget/CartWidget';
 export * from './NavBar/NavBar';
+export * from './Products/Products';
 export * from './productsMock';
